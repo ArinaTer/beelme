@@ -1,0 +1,44 @@
+/**
+ * FAQ
+ */
+
+.faq {
+  padding-top: 13px;
+
+  &_nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+
+    > li {
+      margin-bottom: 30px;
+
+      > a {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .faq {
+    padding-top: 45px;
+
+    &_nav {
+      > li {
+        > a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/**
+ * Footer
+ */
+
+.footer {
+  padding: 50px 20px 10px;
+  background-color: #fafafa;
+
+  .logo {
+    margin-bottom: 27px;
+
+    .icon-logo {
+      fill: #b3b3b3;
+    }
+  }
+
+  &_copy {
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+
+  &_nav {
+    color: #b3b3b3;
+
+    h4 {
+      margin: 0 0 18px 0;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+      font-family: 'Proxima Nova Ltlight', sans-serif;
+
+      li {
+        margin-bottom: 11px;
+      }
+    }
+
+    a {
+      color: #b3b3b3;
+    }
+  }
+
+  div[class^="col-"] {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 75px 0 70px;
+
+    div[class^="col-"] {
+      margin-bottom: 0;
+    }
+  }
+}

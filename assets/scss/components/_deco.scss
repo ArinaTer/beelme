@@ -1,0 +1,42 @@
+/**
+ * Deco
+ */
+
+.deco {
+  padding-bottom: 35px;
+  text-align: center;
+
+  img {
+    max-width: 200px;
+
+    .owl-carousel & {
+      display: inline-block;
+    }
+  }
+
+  &.__large {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .deco {
+    padding-bottom: 0;
+
+    img {
+      max-width: 200px;
+    }
+
+    &.__strengths {
+      padding-top: 200px;
+
+      img {
+        max-width: 570px;
+      }
+    }
+  }
+}

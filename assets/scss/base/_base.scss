@@ -1,0 +1,98 @@
+/**
+ * Base Styles
+ */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 11px;
+	line-height: 1.466666;
+	font-family: 'Roboto Regular', sans-serif;
+	color: #000;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-family: 'Proxima Nova Ltlight', sans-serif;
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+h3 {
+	margin: 22px 0 17px 0;
+	font-size: 18px;
+
+	&.lined {
+		font-size: 22px;
+		margin-bottom: 30px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+h4 {
+	margin: 12px 0 22px;
+  	font-size: 18px
+}
+
+p {
+	margin: 7px 0 16px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.sprite {
+	display: none;
+}
+
+@media screen and (min-width: 321px) {
+	h3 {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 12px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	p {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		font-size: 15px;
+	}
+
+	h3 {
+		font-size: 34px;
+
+		&.lined {
+			font-size: 34px;
+			margin-bottom: 50px;
+			padding-bottom: 45px;
+		}
+	}
+
+	h4 {
+	  	font-size: 28px
+	}
+
+	p {
+		margin-top: 10px;
+	}
+}

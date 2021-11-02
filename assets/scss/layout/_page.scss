@@ -1,0 +1,80 @@
+/**
+ * Page
+ */
+
+.page {
+  padding: 110px 0 35px;
+
+  &_inner {
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  &_header {
+    text-align: center;
+    overflow: hidden;
+
+    time {
+      display: block;
+      padding-bottom: 10px;
+      font-size: 10px;
+      color: #c2c2c2;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-family: 'Proxima Nova Ltlight', sans-serif;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+  &_entry {
+    img {
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      max-width: 250px;
+      width: 100%;
+      border: 1px solid #c2c2c2;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    &_inner {
+      padding: 0 15px;
+      max-width: 750px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    padding: 85px 0;
+
+    &_inner {
+      padding: 0;
+      max-width: 760px;
+    }
+
+    &_header {
+      margin-bottom: 55px;
+      overflow: visible;
+
+      time {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 45px;
+      }
+    }
+    &_entry {
+      img {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}

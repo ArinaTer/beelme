@@ -1,0 +1,27 @@
+{
+  "name": "beelme",
+  "version": "0.0.0",
+  "authors": [
+    "Artem Terehin <a.terehin@nobrand.team>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.2.1",
+    "bootstrap-sass": "^3.3.7",
+    "jquery-sticky": "^1.0.4"
+  },
+  "description": "",
+  "main": "",
+  "homepage": "",
+  "private": true
+}

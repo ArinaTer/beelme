@@ -1,0 +1,51 @@
+/* =========================
+ * Bootstrap SASS
+ * =========================*/
+
+// Bootstrap variables and mixins
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Bootstrap reset and dependencies
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+
+// Bootstrap core CSS
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+
+/* =========================
+ * Vendors Styles
+ * =========================*/
+
+@import "./bower_components/owl.carousel/dist/assets/owl.carousel.min";
+
+
+
+/* =========================
+ * User Styles
+ * =========================*/
+
+// Base
+@import "base/fonts";
+@import "base/base";
+
+// Layout
+@import "layout/section";
+@import "layout/page";
+@import "layout/footer";
+
+// Components
+@import "components/icons";
+@import "components/navbar";
+@import "components/logo";
+@import "components/socials";
+@import "components/btn";
+@import "components/deco";
+@import "components/entry";
+@import "components/owl";
+@import "components/how-to";
+@import "components/download";
+@import "components/faq";
+@import "components/contacts";

@@ -1,0 +1,40 @@
+/**
+ * Logo
+ */
+
+.logo {
+  margin: 0;
+
+  .icon-logo {
+    width: 100px;
+    height: 37px;
+    vertical-align: top;
+  }
+
+  &.__medium {
+    .icon-logo {
+      width: 120px;
+      height: 43px;
+    }
+  }
+}
+
+@media screen and (min-width: 321px) {
+  .logo {
+    .icon-logo {
+      width: 110px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    &.__medium {
+      .icon-logo {
+        width: 150px;
+        height: 54px;
+      }
+    }
+  }
+}

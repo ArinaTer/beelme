@@ -1,0 +1,163 @@
+/**
+ * Navbar
+ */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 13px 0;
+  background-color: #3b41c1;
+  z-index: 999 !important;
+
+  .logo {
+    float: left;
+    margin-left: 20px;
+
+    .icon-logo {
+      fill: #fff;
+    }
+  }
+
+  &_toggle {
+    float: right;
+    margin: 4px 15px 0 0;
+    display: block;
+    width: 28px;
+    height: 30px;
+    cursor: pointer;
+
+    span {
+      position: relative;
+      display: block;
+      margin-top: 14px;
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -9px;
+      }
+      &:after{
+        top: 9px;
+      }
+    }
+
+    span,
+    span:after,
+    span:before {
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+    }
+
+    &.__on {
+      span {
+        background-color: transparent;
+
+        &:before {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:after {
+          transform: rotate(-45deg) translate(7px, -8px);
+        }
+      }
+    }
+  }
+
+  &_top {
+    overflow: hidden;
+  }
+
+  &_container {
+    display: none;
+
+    &.__visible {
+      display: block;
+    }
+  }
+
+  &_nav {
+    margin-top: 15px;
+    padding: 10px 20px 15px;
+    border-top: 1px solid #4d53d2;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin-top: 15px;
+        font-size: 14px;
+        font-family: 'Proxima Nova Ltlight';
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    .logo {
+      margin-left: 0;
+    }
+
+    &_nav {
+      padding: 10px 0 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    position: static;
+
+    &_toggle {
+      display: none;
+    }
+
+    &_container {
+      display: block;
+    }
+
+    &_nav {
+      float: right;
+      padding: 10px 0 0 0;
+      margin: 0;
+      border: none;
+
+      ul {
+        li {
+          float: left;
+          margin: 0 0 0 40px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    &_nav {
+      padding: 9px 0 0 0;
+
+      ul {
+        li {
+          margin: 0 0 0 45px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

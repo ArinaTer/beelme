@@ -1,0 +1,23 @@
+/**
+ * Icons
+ */
+
+svg[class^="icon-"] {
+  width: 33px;
+  height: 37px;
+  fill: #000;
+}
+
+@media screen and (min-width: 768px) {
+  svg[class^="icon-"] {
+    width: 41px;
+    height: 47px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  svg[class^="icon-"] {
+    width: 51px;
+    height: 60px;
+  }
+}

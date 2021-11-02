@@ -1,0 +1,65 @@
+/**
+ * Owl Carousel
+ */
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+
+  .owl-prev,
+  .owl-next {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &:after,
+    &:before {
+      content:"";
+      position: absolute;
+      border-radius: 2px;
+      height: 2px;
+      width: 20px;
+      background: #000;
+    }
+
+    &:after {
+      top: 14px;
+    }
+
+    &:before {
+      top: 13px;
+    }
+  }
+
+  .owl-prev {
+    float: left;
+
+    &:after,
+    &:before {
+      left: 0;
+      transform-origin: left center;
+    }
+  }
+
+  .owl-next {
+    float: right;
+
+    &:after,
+    &:before {
+      right: 0;
+      transform-origin: right center;
+    }
+  }
+
+  .owl-prev:after,
+  .owl-next:before {
+    transform: rotate(-45deg);
+  }
+
+  .owl-prev:before,
+  .owl-next:after {
+    transform: rotate(45deg);
+  }
+}
